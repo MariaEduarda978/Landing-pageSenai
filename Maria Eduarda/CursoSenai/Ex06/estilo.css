@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+
+h1,h2{
+
+    color: blue;
+    background-color: blanchedalmond;
+    height: 100px;
+    width: 400px;
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+    font-family: serif
+    border-radius: 20px;
+    padding: 10px;
+}
+.classh1{
+    background-color: aquamarine;
+    height: 200px;
+width: 400px;
+border-style: solid;
+border-color: aqua;
+margin: auto;
+font-family: 'Roboto', sem serifa;
+border-radius: 20px;
+padding: 10px;
+}
+#ident{
+    color: antiquewhite;
+}
+.cor{
+    color: rgb(0, 21, 255);
+}
+nav>a{
+    color: rgb(111, 63, 159);
+}
+ul{
+    color: brown;
+}
+a:hover{
+    background-color: blue;
+}
+header{
+    position: fixed;
+}

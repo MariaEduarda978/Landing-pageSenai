@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model </title>
+    <style>
+        #area{
+            font: normal 20pt Arial;
+            background: blue;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            cursor:grab;
+        }
+    </style>
+</head>
+<body>
+   <p><strong>Paragráfo 1</strong></p> 
+   <p id="ident">Paragráfo 2</p>
+   <div id="area" <!-- onclick="clicar()" onmouseleave="sair()" onmousemove="Entrar()" -->>Clique aqui!</div>
+   <script>
+    // DOM
+    let p1=document.getElementsByTagName('p')[0]
+    document.write('Através do JS:'+p1.innerHTML )
+    p1.style.color='blue'
+
+    let p2=document.querySelector('#ident')
+    p2.style.color='white'
+    p2.style.background='green'
+    p2.style.fontSize='40px'
+
+    let propDiv=document.querySelector('#area')
+
+    propDiv.addEventListener('click',clicar)
+    propDiv.addEventListener('mouseenter',Entrar)
+    propDiv.addEventListener('mouseout',sair)
+
+    function clicar(){
+        propDiv.style.background='red'
+        propDiv.innerHTML='Clicou!'
+    }
+    function sair(){
+        propDiv.style.background='blue'
+        propDiv.innerHTML='Clique aqui!'
+    }
+    function Entrar(){
+        propDiv.style.background='green'
+        propDiv.innerHTML='AGORA!!'
+    }
+   </script>
+
+</body>
+</html>

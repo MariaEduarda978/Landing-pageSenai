@@ -1,0 +1,13 @@
+h1,h2{
+    color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form>input,button{
+    background-color: bisque;
+}
+.exclusivo{
+    color: blue;
+}
+#id{
+    color: black;
+}

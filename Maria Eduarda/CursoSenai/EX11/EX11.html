@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo com Javascript</title>
+    <style>
+        body,input{
+            font: normal 18pt Arial;
+        }
+        input[type='number']{
+            width: 100px;
+        }
+        div{
+            margin-top: 20px;
+        }
+        input[type='button']{
+          background-color: rgb(237, 142, 172);
+          font: normal 18pt Arial;
+        }
+        h1{
+            font: normal Arial;
+            color: lightpink;
+          
+        }
+        input:hover{
+            background-color:lightpink;
+        }
+        div::selection{
+            background-color: plum;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Calcular</h1>
+    <input type="number" id="n01"> /
+    <input type="number" id="n02">
+    <input type="button" value="Dividir" onclick="dividir()">
+    <div id="res">Resultado:</div>
+
+<script>
+    function dividir(){
+        let n01=document.querySelector('input#n01')
+        let n02=document.querySelector('input#n02')
+        let n1=Number(n01.value)
+        let n2=Number(n02.value)
+        let dividido=n1/n2
+        let result=document.getElementById('res')
+        result.innerHTML='O resultado da divisão é ' +dividido
+    }
+
+</script>
+
+</body>
+</html>
